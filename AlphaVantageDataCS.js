@@ -7,11 +7,11 @@
         var cols = [{
             id: "open",
             alias: "Open",
-            dataType: tableau.dataTypeEnum.float
+            dataType: tableau.dataTypeEnum.string
         }, {
             id: "high",
             alias: "High",
-            dataType: tableau.dataTypeEnum.float
+            dataType: tableau.dataTypeEnum.string
         }, {
             id: "date",
             alias: "Date",
@@ -19,15 +19,15 @@
         }, {
             id: "low",
             alias: "Low",
-            dataType: tableau.dataTypeEnum.float
+            dataType: tableau.dataTypeEnum.string
         }, {
             id: "close",
             alias: "Close",
-            dataType: tableau.dataTypeEnum.float
+            dataType: tableau.dataTypeEnum.string
         }, {
             id: "volume",
             alias: "Volume",
-            dataType: tableau.dataTypeEnum.float
+            dataType: tableau.dataTypeEnum.string
         }];
     
         var tableSchema = {
