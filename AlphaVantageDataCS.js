@@ -15,7 +15,7 @@
         }, {
             id: "date",
             alias: "Date",
-            dataType: tableau.dataTypeEnum.date
+            dataType: tableau.dataTypeEnum.string
         }, {
             id: "low",
             alias: "Low",
