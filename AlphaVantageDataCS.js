@@ -7,27 +7,27 @@
         var cols = [{
             id: "open",
             alias: "Open",
-            dataType: tableau.dataTypeEnum.string
+            dataType: tableau.dataTypeEnum.float
         }, {
             id: "high",
             alias: "High",
-            dataType: tableau.dataTypeEnum.string
+            dataType: tableau.dataTypeEnum.float
         }, {
             id: "date",
             alias: "Date",
-            dataType: tableau.dataTypeEnum.string
+            dataType: tableau.dataTypeEnum.date
         }, {
             id: "low",
             alias: "Low",
-            dataType: tableau.dataTypeEnum.string
+            dataType: tableau.dataTypeEnum.float
         }, {
             id: "close",
             alias: "Close",
-            dataType: tableau.dataTypeEnum.string
+            dataType: tableau.dataTypeEnum.float
         }, {
             id: "volume",
             alias: "Volume",
-            dataType: tableau.dataTypeEnum.string
+            dataType: tableau.dataTypeEnum.float
         }];
     
         var tableSchema = {
@@ -41,8 +41,7 @@
 
     myConnector.getData = function (table, doneCallback) {
         
-        const url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol='+tableau.connectionData+'&apikey=QYOWP5SXIHB6BV3X'
-        //const url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=TSLA&apikey=QYOWP5SXIHB6BV3X'
+        const url = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol='+tableau.connectionData+'&interval=15min&apikey=M7HVCM9XBJI01L3L'
         $.ajax({
             dataType: "json",
             url: url,
