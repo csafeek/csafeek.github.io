@@ -42,6 +42,7 @@
     myConnector.getData = function (table, doneCallback) {
         
         const url = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol='+tableau.connectionData+'&interval=15min&apikey=M7HVCM9XBJI01L3L'
+        //const url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=TSLA&apikey=QYOWP5SXIHB6BV3X'
         $.ajax({
             dataType: "json",
             url: url,
